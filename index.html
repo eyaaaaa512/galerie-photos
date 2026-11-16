@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Galerie de Photos Interactive et Accessible</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="ajouterTabindex()">
+
+    <header>
+        <h1>Galerie de Photos Interactive</h1>
+    </header>
+
+    <main>
+        <div id="image" tabindex="0">
+            Survolez ou sélectionnez une image ci-dessous pour l'afficher ici.
+        </div>
+
+        <section class="galerie" aria-label="Miniatures de la galerie">
+            <img class="preview" 
+                 src="https://picsum.photos/id/1018/600/400" 
+                 alt="Vue panoramique d'une vallée montagneuse sous un ciel nuageux" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 src="https://picsum.photos/id/1015/600/400" 
+                 alt="Rivière calme serpentant entre des falaises rocheuses" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 src="https://picsum.photos/id/1019/600/400" 
+                 alt="Ciel étoilé nocturne au-dessus d'un paysage sombre" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 src="https://picsum.photos/id/1025/600/400" 
+                 alt="Chien carlin emmitouflé dans une couverture" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 src="https://picsum.photos/id/1039/600/400" 
+                 alt="Cascade d'eau entourée d'une forêt verdoyante" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 src="https://picsum.photos/id/1043/600/400" 
+                 alt="Sentier forestier bordé d'arbres en automne" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+        </section>
+    </main>
+
+</body>
+</html>
